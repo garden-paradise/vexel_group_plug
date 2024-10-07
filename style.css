@@ -1,0 +1,124 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-weight: normal;
+}
+
+.body {
+  background: url(./images/fon.png) no-repeat center top;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  /* background-size: 100%; */
+  height: 100vh;
+  /* width: auto; */
+  /* height: auto;
+  width: auto; */
+  /* object-fit: fill; */
+  /* display: block; */
+
+  /* height: -webkit-fill-available; */
+  /* max-width: 1920px;
+  max-height: 980px; */
+  /* width: auto;
+  height: auto; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 72px 0 68px;
+}
+.header_tel {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  font-family: 'dela-gothic-one-regular';
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main1 {
+  margin-right: 15px;
+}
+.addres {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: white;
+}
+.addres:first-child {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 480px) {
+  .body {
+    background: url(./images/fonTel.png) no-repeat center top;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+  .header {
+    margin: 44px 15px;
+    align-items: center;
+  }
+  .header_logo {
+    width: 80px;
+    height: 100%;
+    height: 42px;
+  }
+  .main {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .addres {
+    font-size: 14px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@font-face {
+  font-family: 'dela-gothic-one-regular';
+  src: url(./fonts/dela-gothic-one-regular.ttf);
+}
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #f9f9fd;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #dd1f3b;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  background-color: #f9f9fd;
+}
